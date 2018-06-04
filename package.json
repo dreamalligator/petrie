@@ -1,0 +1,22 @@
+{
+  "name": "petrie",
+  "version": "1.0.0",
+  "description": "a graph-based phylogenetic tree, implemented in Javascript.",
+  "main": "index.js",
+  "repository": "git@github.com:nebulousdog/petrie.git",
+  "author": "Tom Spalding <tom@nebulousdog.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "mocha": "^5.2.0",
+    "webpack": "^4.9.2"
+  },
+  "dependencies": {
+    "javascript-algorithms-and-data-structures": "https://github.com/trekhleb/javascript-algorithms.git",
+    "node-fetch": "^2.1.2",
+    "petrie-itis": "^1.0.0"
+  },
+  "scripts": {
+    "test": "$(yarn bin)/mocha"
+  }
+}
