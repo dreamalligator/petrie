@@ -7,16 +7,34 @@
   "author": "Tom Spalding <tom@nebulousdog.com>",
   "license": "MIT",
   "devDependencies": {
+    "coveralls": "^3.0.1",
     "eslint": "^4.19.1",
     "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
     "webpack": "^4.9.2"
   },
   "dependencies": {
     "javascript-algorithms-and-data-structures": "https://github.com/trekhleb/javascript-algorithms.git",
+    "js-levenshtein": "^1.1.3",
     "node-fetch": "^2.1.2",
     "petrie-itis": "^1.0.0"
   },
   "scripts": {
-    "test": "$(yarn bin)/mocha"
-  }
+    "docs": "$(yarn bin)/jsdoc --destination docs -R README.md",
+    "lint": "$(yarn bin)/eslint lib",
+    "test": "$(yarn bin)/nyc mocha",
+    "coverage": "$(yarn bin)/nyc report --reporter=text-lcov | $(yarn bin)/coveralls"
+  },
+  "keywords": [
+    "petrie",
+    "itis",
+    "taxonomy",
+    "phylogeny",
+    "data-structures",
+    "taxonomic tree",
+    "nature",
+    "graph",
+    "classification"
+  ],
+  "homepage": "https://nebulousdog.github.io/petrie/"
 }

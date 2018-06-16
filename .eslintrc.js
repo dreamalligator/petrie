@@ -13,6 +13,7 @@ module.exports = {
     // Possible Errors
     "no-console": ["error", { "allow": ["warn", "error", "debug"]}],
     // Stylistic Issues
-    "semi": "error"
+    "require-jsdoc": "error",
+    "semi": "error",
   }
 };

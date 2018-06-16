@@ -2,6 +2,9 @@
 
 ![petrie](https://github.com/nebulousdog/petrie/blob/master/petrie.png)
 
+![vulnerabilities](https://snyk.io/test/github/nebulousdog/petrie/badge.svg?targetFile=package.json)
+![coverage](https://coveralls.io/repos/github/nebulousdog/petrie/badge.svg?branch=master)
+
 a Graph-based phylogenetic tree, implemented in Javascript.
 
 ## Phylogeny and Taxonomy
